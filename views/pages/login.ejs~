@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+<body>
+<div class="container">
+</div>
+</body>
+</html>

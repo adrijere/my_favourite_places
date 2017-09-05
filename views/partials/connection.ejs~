@@ -1,0 +1,5 @@
+        <% if (connected == false) { %>
+        <div class="col-6 col-lg-4"><a href="/login"><button type="button" class="btn btn-outline-primary btn-lg loginbutton">Login</button></a></div>
+        <% } else { %>
+        <div class="col-6 col-lg-4"><a href="/myaccount"><button type="button" class="btn btn-outline-primary btn-lg loginbutton">My Account</button></a></div>
+        <% } %>

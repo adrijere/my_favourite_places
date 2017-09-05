@@ -1,0 +1,13 @@
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-6 col-lg-8">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-map-marker"></span></span>
+            <input type="text" class="form-control search-bar" placeholder="Search a city" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <% if (connected == false) { %>
+        <div class="col-6 col-lg-4"><a href="/login"><button type="button" class="btn btn-outline-primary btn-lg loginbutton">Login</button></a></div>
+        <% } else { %>
+        <div class="col-6 col-lg-4"><a href="/myaccount"><button type="button" class="btn btn-outline-primary btn-lg loginbutton">My Account</button></a></div>
+        <% } %>
+  </div>

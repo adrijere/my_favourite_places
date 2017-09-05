@@ -1,0 +1,11 @@
+$( ".search-bar" ).autocomplete({
+  source: function( request, response ) {
+    $.ajax( {
+      url: "/cities",
+      dataType: "json",
+      success: function( data ) {
+        response( data );
+      }
+    });
+  }
+});

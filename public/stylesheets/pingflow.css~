@@ -1,0 +1,33 @@
+.city {
+    border-style: solid;
+    border-color: #337ab7;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.loginbutton {
+    float: right;
+}
+
+#popupbox{
+    padding: 10px;
+    height: 150px; 
+    position: absolute; 
+    background: white; 
+    border: solid #337ab7 2px;
+    border-radius: 10px;
+    z-index: 15;
+    left: 50%;
+    visibility: hidden; 
+}
+
+a {
+    color: black;
+}
+
+#closerpopup {
+float: right;
+margin: 2px;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <% include ../partials/header.ejs %>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="lib/js/search-bar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <% include ../partials/connection.ejs %>
+      <div class="row">
+        <% for (i = 0; i < cities.length; i++) { %>
+           <div class="col-6 col-lg-3 city">
+             <h2><%= cities[i].name %>, <%= cities[i].country %></h2>
+           Population : <%= cities[i].population %><br/>
+           Tags : <br/>
+           <% for (j = 0; j < cities[i].tags.length; j++) { %>
+              <span class="label label-primary"><%= cities[i].tags[j] %></span>
+              <% } %>
+           </div>
+           <% if (i % 2 != 0 || i == 0) { %>
+           <div class="col-6 col-lg-1"></div>
+           <% } %>
+           <% } %>
+      </div>
+    </div>
+  </body>
+</html>
