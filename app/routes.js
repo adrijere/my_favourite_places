@@ -29,7 +29,7 @@ module.exports = function(app) {
       fetchNextPage();
     }, function done(err) {
       if (err) { console.error(err); return; }
-      if (req.session.user)
+      if (req.session != undefined && req.session.user != undefined)
         res.render('pages/index', { cities : cities, connected : true, user: req.session.user });
       else
         res.render('pages/index', { cities : cities, connected : false, user: null });
