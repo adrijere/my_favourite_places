@@ -31,3 +31,9 @@ a .loginbutton{
 float: right;
 margin: 2px;
 }
+
+.fav {
+    float: right;
+    font-size: 16px;
+    color: black;
+}

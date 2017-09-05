@@ -9,9 +9,10 @@
   "dependencies": {
     "airtable": "^0.5.0",
     "body-parser": "~1.0.0",
-    "ejs": "2.3.3",
-    "express": "4.13.3",
-    "mongoose": "~3.8.1",
+    "cookie-session": "^1.3.1",
+    "ejs": "latest",
+    "express": "latest",
+    "mongoose": "latest",
     "path": "^0.12.7"
   },
   "engines": {

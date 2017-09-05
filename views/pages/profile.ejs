@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <% include ../partials/header.ejs %>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="lib/js/search-bar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <% include ../partials/connection.ejs %>
+      <div class="row">
+        <h2>Your favourite places :</h2>
+        <% for(i = 0; i < user.favoris.length; i++) { %>
+           <p class='<%= user.favoris[i] %>'><%= user.favoris[i] %> <span class="glyphicon glyphicon-remove deleteFav"></span></p>
+           <% } %>
+      </div>
+    </div>
+  </body>
+</html>
